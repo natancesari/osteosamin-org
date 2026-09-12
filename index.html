@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="it-IT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- Titolo e Meta Description ottimizzati per la SEO Organica (Google Search Console) -->
+    <title>Osteosamin in Italia - Supporto Naturale per la Mobilità e il Benessere</title>
+    <meta name="description" content="Scopri Osteosamin, l'integratore naturale scelto in Italia per supportare il benessere quotidiano e ritrovare il piacere di muoversi liberamente.">
+    
+    <style>
+        /* Variabili di Colore basate sulla pagina ufficiale Osteosamin */
+        :root {
+            --primary-dark-green: #034732; /* Verde escuro oficial do logo/títulos */
+            --accent-green: #059669; /* Verde esmeralda vibrante para botões */
+            --bg-light: #F8FAFC;
+            --text-dark: #1E293B;
+            --text-gray: #475569;
+            --border-light: #E2E8F0;
+        }
+
+        /* Reset e Impostazioni di Base */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-light);
+            color: var(--text-dark);
+            line-height: 1.7;
+            font-size: 16px;
+        }
+
+        /* Struttura Principale SEO */
+        .page-wrapper {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            box-shadow: 0 0 25px rgba(0,0,0,0.04);
+        }
+
+        /* Header */
+        header {
+            background-color: #ffffff;
+            text-align: center;
+            padding: 25px 20px;
+            border-bottom: 3px solid var(--accent-green);
+        }
+
+        .logo-text {
+            font-size: 30px;
+            font-weight: 900;
+            color: var(--primary-dark-green);
+            letter-spacing: 1px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        /* Icone verde no logo imitando o design original */
+        .logo-icon {
+            width: 24px;
+            height: 24px;
+            background-color: var(--accent-green);
+            border-radius: 50%;
+            display: inline-block;
+        }
+
+        /* Contenuto Principale (Articolo SEO) */
+        main {
+            padding: 40px 30px;
+        }
+
+        h1 {
+            color: var(--primary-dark-green);
+            font-size: 34px;
+            font-weight: 800;
+            line-height: 1.25;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+
+        h2 {
+            color: var(--primary-dark-green);
+            font-size: 26px;
+            font-weight: 700;
+            margin: 45px 0 20px 0;
+            border-bottom: 2px solid var(--bg-light);
+            padding-bottom: 12px;
+        }
+
+        p {
+            margin-bottom: 22px;
+            color: var(--text-gray);
+        }
+
+        /* Contenitore Immagini (SEO Otimizzato) */
+        .image-container {
+            margin: 35px 0;
+            text-align: center;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+        }
+
+        .image-caption {
+            font-size: 13px;
+            color: #94A3B8;
+            margin-top: 10px;
+            font-style: italic;
+        }
+
+        /* Lista dei Benefici (Ottimo per Google Snippets) */
+        .benefits-list {
+            background-color: #F0FDF4; /* Fundo verde super claro */
+            padding: 30px;
+            border-radius: 12px;
+            border-left: 6px solid var(--accent-green);
+            margin-bottom: 35px;
+        }
+
+        .benefits-list h3 {
+            color: var(--primary-dark-green);
+            margin-bottom: 15px;
+            font-size: 20px;
+        }
+
+        .benefits-list ul {
+            list-style-type: none;
+        }
+
+        .benefits-list li {
+            margin-bottom: 15px;
+            padding-left: 30px;
+            position: relative;
+            font-weight: 600;
+            color: var(--primary-dark-green);
+        }
+
+        .benefits-list li::before {
+            content: "🌿";
+            position: absolute;
+            left: 0;
+            font-size: 16px;
+        }
+
+        /* Box Offerta e Prezzo */
+        .offer-box {
+            background-color: var(--primary-dark-green);
+            color: #ffffff;
+            text-align: center;
+            padding: 40px 25px;
+            border-radius: 16px;
+            margin: 50px 0;
+            box-shadow: 0 15px 30px rgba(3, 71, 50, 0.2);
+        }
+
+        .offer-box h3 {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        .price-discount {
+            background-color: #ffffff;
+            color: var(--accent-green);
+            display: inline-block;
+            padding: 6px 14px;
+            border-radius: 6px;
+            font-weight: bold;
+            font-size: 15px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .price-old {
+            text-decoration: line-through;
+            font-size: 18px;
+            color: #94A3B8;
+            display: block;
+        }
+
+        .price-new {
+            font-size: 46px;
+            font-weight: 900;
+            color: #ffffff;
+            line-height: 1;
+            margin-bottom: 25px;
+            display: block;
+        }
+
+        /* Bottone Call to Action */
+        .cta-button {
+            display: inline-block;
+            width: 100%;
+            max-width: 380px;
+            background-color: var(--accent-green);
+            color: #ffffff;
+            font-size: 22px;
+            font-weight: bold;
+            text-decoration: none;
+            padding: 20px 20px;
+            border-radius: 50px;
+            text-align: center;
+            box-shadow: 0 8px 25px rgba(5, 150, 105, 0.4);
+            transition: all 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #047857;
+            transform: translateY(-3px);
+            box-shadow: 0 12px 30px rgba(5, 150, 105, 0.5);
+        }
+
+        .cod-notice {
+            font-size: 15px;
+            margin-top: 20px;
+            display: block;
+            color: #E2E8F0;
+            font-weight: 500;
+        }
+
+        /* FAQ - Ottimo per la SEO Organica */
+        .faq-item {
+            margin-bottom: 25px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid var(--border-light);
+        }
+        
+        .faq-item h4 {
+            color: var(--primary-dark-green);
+            font-size: 19px;
+            margin-bottom: 10px;
+        }
+
+        /* Footer Legale - Cores Brancas Aplicadas */
+        footer {
+            background-color: var(--primary-dark-green);
+            padding: 40px 20px;
+            text-align: center;
+            font-size: 13px;
+            color: #ffffff; /* Texto geral em branco */
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-bottom: 25px;
+        }
+
+        .footer-links a {
+            color: #ffffff; /* Links em branco sólido */
+            text-decoration: none;
+            font-weight: 600;
+            cursor: pointer;
+            transition: color 0.2s;
+        }
+
+        .footer-links a:hover {
+            color: #BBF7D0; /* Efeito hover em verde super claro para feedback visual */
+            text-decoration: underline;
+        }
+
+        /* Stili Modali */
+        .modal-overlay {
+            display: none; 
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(3, 71, 50, 0.85); /* Fundo verde escuro transparente */
+            backdrop-filter: blur(5px);
+            align-items: center;
+            justify-content: center;
+            padding: 15px;
+            opacity: 0;
+            animation: fadeIn 0.3s forwards;
+        }
+
+        @keyframes fadeIn {
+            to { opacity: 1; }
+        }
+
+        .modal-content {
+            background-color: #ffffff;
+            padding: 35px 30px;
+            border-radius: 16px;
+            width: 100%;
+            max-width: 500px;
+            max-height: 85vh;
+            overflow-y: auto;
+            position: relative;
+            text-align: left;
+            box-shadow: 0 15px 50px rgba(0,0,0,0.3);
+        }
+
+        .modal-content h3 {
+            color: var(--primary-dark-green);
+            margin-bottom: 15px;
+            font-size: 24px;
+            border-bottom: 2px solid var(--bg-light);
+            padding-bottom: 12px;
+        }
+
+        .modal-content p {
+            font-size: 15px;
+            margin-bottom: 15px;
+            color: var(--text-gray);
+            line-height: 1.6;
+        }
+
+        .contact-email {
+            display: inline-block;
+            background-color: #F0FDF4;
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-weight: bold;
+            color: var(--accent-green);
+            text-decoration: none;
+            border: 1px solid #BBF7D0;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 28px;
+            font-weight: bold;
+            color: #CBD5E1;
+            cursor: pointer;
+            line-height: 1;
+        }
+
+        .close-btn:hover {
+            color: var(--accent-green);
+        }
+
+        @media (max-width: 600px) {
+            main { padding: 30px 20px; }
+            h1 { font-size: 28px; }
+            .price-new { font-size: 40px; }
+            .logo-text { font-size: 24px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="page-wrapper">
+        <header>
+            <div class="logo-text">
+                <span class="logo-icon"></span> Osteosamin
+            </div>
+        </header>
+
+        <main>
+            <!-- H1 ottimizzato per la SEO -->
+            <h1>Ritrova la gioia di muoverti in modo naturale con Osteosamin</h1>
+            
+            <p>Se stai cercando una soluzione sicura e di alta qualità in Italia per supportare il tuo stile di vita attivo, sei nel posto giusto. Mantenere una buona flessibilità e vitalità quotidiana è essenziale per godersi ogni momento della giornata senza limitazioni.</p>
+            <p>In questo approfondimento, scopriamo perché <strong>Osteosamin</strong> è diventato uno degli integratori naturali più scelti da chi desidera prendersi cura del proprio benessere a lungo termine.</p>
+
+            <!-- Placeholder Prodotto Principale -->
+            <div class="image-container">
+                <!-- IMMAGINE DEL PRODOTTO: Inserisci qui l'immagine ritagliata del flacone Osteosamin -->
+                <img src="osteosamin.png" alt="Flacone originale di Osteosamin in Italia">
+                <div class="image-caption">Formulazione avanzata per il benessere quotidiano.</div>
+            </div>
+
+            <h2>Cos'è Osteosamin e come supporta il tuo benessere?</h2>
+            <p><strong>Osteosamin</strong> è un integratore alimentare sviluppato con ingredienti naturali e trasparenti, accuratamente selezionati per supportare la fisiologica funzione del corpo. Il suo obiettivo principale è aiutare a mantenere uno stile di vita dinamico, contrastando la sensazione di rigidità legata all'età o allo stress fisico.</p>
+            <p>La sua composizione è studiata per offrire un supporto progressivo. A differenza di soluzioni temporanee, Osteosamin è pensato per integrarsi perfettamente nella tua routine quotidiana, offrendo risultati sostenibili e supporto costante.</p>
+
+            <!-- Lista Benefici (Google ama elenchi puntati per i Featured Snippets) -->
+            <div class="benefits-list">
+                <h3>Perché le persone scelgono Osteosamin:</h3>
+                <ul>
+                    <li><strong>Ingredienti Trasparenti:</strong> Formulato con estratti naturali di alta qualità.</li>
+                    <li><strong>Supporto Quotidiano:</strong> Aiuta a mantenere uno stile di vita attivo e flessibile.</li>
+                    <li><strong>Senza Compromessi:</strong> Pensato per un'assimilazione ottimale da parte del corpo.</li>
+                    <li><strong>Pratico e Sicuro:</strong> Solo pochi secondi al giorno per prendersi cura di sé.</li>
+                </ul>
+            </div>
+
+            <!-- Placeholder Immagine Stile di Vita (Guarda il Prompt HTML commentato sotto) -->
+            <!-- PROMPT PARA IA (IMAGEM 1): "A realistic, high-quality photo of an active, healthy senior Italian couple walking happily in a sunny, green park. They are smiling, wearing casual comfortable clothes, showing vitality and easy mobility. Natural lighting, positive atmosphere, lifestyle photography, 8k resolution, photorealistic. No watermarks." -->
+            <div class="image-container">
+                <img src="imagem-um.jpg" alt="Coppia felice e attiva al parco">
+            </div>
+
+            <h2>Un approccio scientifico basato sulla natura</h2>
+            <p>Il segreto dell'efficacia di Osteosamin risiede nella combinazione bilanciata dei suoi componenti. Gli esperti del benessere concordano che un approccio preventivo e costante è la chiave per mantenere un equilibrio interno ottimale.</p>
+
+            <!-- Placeholder Immagine Esperto (Guarda il Prompt HTML commentato sotto) -->
+            <!-- PROMPT PARA IA (IMAGEM 2): "A photorealistic portrait of a confident, middle-aged European male specialist or researcher in a bright, modern, clean laboratory or clinic setting. He is wearing a white coat, looking approachable and trustworthy, holding a clipboard. High quality, 8k resolution, professional lighting, photorealistic. No watermarks." -->
+            <div class="image-container">
+                <img src="medico.jpg" alt="Specialista del benessere consiglia integratori naturali">
+            </div>
+
+            <!-- Sezione FAQ per la SEO Organica -->
+            <h2>Domande Frequenti su Osteosamin in Italia</h2>
+            
+            <div class="faq-item">
+                <h4>È sicuro da usare tutti i giorni?</h4>
+                <p>Assolutamente sì. Osteosamin è formulato con ingredienti naturali selezionati proprio per l'uso quotidiano, supportando il corpo senza gli effetti collaterali associati a prodotti non naturali.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h4>Come funziona la spedizione e il pagamento?</h4>
+                <p>Per garantirti la massima sicurezza e trasparenza, gestiamo gli ordini tramite <em>Pagamento alla Consegna</em>. Questo significa che puoi ordinare comodamente online e <strong>pagare in contanti direttamente al corriere</strong> quando il pacco arriva a casa tua in Italia, senza bisogno di inserire carte di credito.</p>
+            </div>
+
+            <!-- Box Offerta con CTA -->
+            <div class="offer-box">
+                <div class="price-discount">SCONTO SPECIALE DEL 50%</div>
+                <h3>Investi nel tuo benessere oggi stesso</h3>
+                <span class="price-old">Prezzo originale: 58€</span>
+                <span class="price-new">29€</span>
+                
+                <!-- IL TUO LINK DI AFFILIAZIONE -->
+                <a href="https://i0yje.doctoradmad.com/l/?sub1=organico" class="cta-button">ORDINA ORA E PAGA ALLA CONSEGNA</a>
+                
+                <span class="cod-notice">📦 Spedizione rapida in tutta Italia. Pagamento 100% sicuro alla consegna.</span>
+            </div>
+
+        </main>
+
+        <!-- Footer e Modali (Textos em branco) -->
+        <footer>
+            <div class="footer-links">
+                <a onclick="openModal('modal-terms')">Termini e Condizioni</a>
+                <a onclick="openModal('modal-privacy')">Informativa sulla Privacy</a>
+                <a onclick="openModal('modal-contact')">Contattaci</a>
+            </div>
+            <p>Osteosamin Italia &copy; 2026. Tutti i diritti riservati.</p>
+            <p style="margin-top: 15px; font-style: italic; color: #ffffff;">*Questo prodotto è un integratore alimentare, non è un medicinale e non sostituisce una dieta varia ed equilibrata e uno stile di vita sano.</p>
+        </footer>
+    </div>
+
+    <!-- MODALI (Finestre a comparsa legali) -->
+    
+    <!-- Modal Termini -->
+    <div id="modal-terms" class="modal-overlay">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('modal-terms')">&times;</span>
+            <h3>Termini e Condizioni</h3>
+            <p>L'utilizzo di questo sito web e la richiesta di prodotti tramite esso sono soggetti a questi termini e condizioni. Questa pagina funge da portale informativo e collegamento verso il distributore ufficiale in Italia.</p>
+            <p>La modalità di pagamento prevista è "Pagamento alla Consegna" (Cash on Delivery), per cui l'utente si impegna a pagare l'intero importo in contanti al ricevimento del pacco all'indirizzo indicato.</p>
+        </div>
+    </div>
+
+    <!-- Modal Privacy -->
+    <div id="modal-privacy" class="modal-overlay">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('modal-privacy')">&times;</span>
+            <h3>Informativa sulla Privacy</h3>
+            <p>Rispettiamo profondamente la tua privacy. Su questa pagina informativa non raccogliamo dati personali, finanziari o numeri di carte di credito.</p>
+            <p>Qualsiasi informazione di spedizione fornita nel modulo sulla pagina ufficiale del produttore verrà utilizzata esclusivamente per la logistica e la consegna del tuo ordine, nel rispetto delle rigorose norme europee sulla riservatezza dei dati.</p>
+        </div>
+    </div>
+
+    <!-- Modal Contatti -->
+    <div id="modal-contact" class="modal-overlay">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('modal-contact')">&times;</span>
+            <h3>Servizio Clienti</h3>
+            <p>Se hai domande sullo stato della tua spedizione o necessiti di assistenza con il tuo ordine, ti consigliamo di comunicarlo direttamente all'operatore logistico quando ti contatterà per confermare la consegna.</p>
+            <p>Per richieste generali riguardanti questa specifica pagina informativa, puoi scriverci direttamente alla nostra email di supporto:</p>
+            
+            <a href="mailto:suportegeralnutra@gmail.com" class="contact-email">suportegeralnutra@gmail.com</a>
+        </div>
+    </div>
+
+    <!-- SCRIPT PER I MODALI -->
+    <script>
+        function openModal(id) {
+            document.getElementById(id).style.display = 'flex';
+            document.body.style.overflow = 'hidden'; 
+        }
+        
+        function closeModal(id) {
+            document.getElementById(id).style.display = 'none';
+            document.body.style.overflow = 'auto'; 
+        }
+        
+        window.onclick = function(event) {
+            if (event.target.classList.contains('modal-overlay')) {
+                event.target.style.display = "none";
+                document.body.style.overflow = 'auto';
+            }
+        }
+    </script>
+</body>
+</html>
